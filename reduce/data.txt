@@ -1,0 +1,5 @@
+adithya kamath  90  20
+nithin  rao 110 10
+adithya kamath  200 2
+nithin  rao 30  5
+nithin  rao 300 10
