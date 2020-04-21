@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fetch API</title>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <img src="" id="rainbow" width="480" />
+    <script>
+      // console.log(`About to fetch rainbow`);
+      // fetch('ronaldo.jpg').then(response=>{
+      //     return response.blob();
+      // }).then((blob)=>{
+      //     document.getElementById("rainow").src= URL.createObjectURL(blob);
+      // }).catch((err)=>{
+      //     console.log(`Error happened! ${err} `);
+      // });
+      try {
+        async function catchRonnie() {
+        const response = await fetch("ronaldo.jpg");
+        const blob = await response.blob();
+        document.getElementById("rainbow").src = URL.createObjectURL(blob);
+      }
+          
+      } catch (error) {
+          console.log(`error ${error}`)
+      }
+      catchRonnie();
+    
+    </script>
+  </body>
+</html>
