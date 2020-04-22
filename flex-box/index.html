@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Experiments With Flexbox</title>
+    <style>
+        @media(min-width:468px){
+            .container-1 {
+        display: flex;
+        /* align-items: flex-start;align-items: center; */
+        /* flex-direction: column; */
+
+        
+      }
+      .container-2{
+          display: flex;
+          /* justify-content: ; justify-content: flex-end; */
+          justify-content: space-between;
+      }
+        }
+     .container-3{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between
+     }
+      .container-1 div, .container-2 div, .container-3 div{
+        border: 1px #ccc solid;
+        padding: 10px;
+      }
+      .box-1 {
+        flex: 2;
+        order: 2;
+      }
+      .box-2 {
+        flex: 1;
+        order: 1;
+      }
+      .box-3 {
+        flex: 1;
+        order: 3;
+      }
+      .container-2-box{
+        flex-basis: 28%;
+      }
+      .container-3-box{
+          flex-basis: 11%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-1">
+      <div class="box-1">
+        <h3>Box One</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          commodo, eros vel interdum sagittis, eros nulla placerat nisi, id
+          blandit ex metus a mi. Praesent semper, augue ut sollicitudin euismod,
+          tellus sem mattis purus, ut sodales metus leo nec mi. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Nam semper tellus at
+          venenatis ornare. Vestibulum ut tincidunt lectus. Sed dignissim
+          iaculis lacus et accumsan. Etiam pretium ac quam nec suscipit. Donec
+          sed pellentesque leo. Pellentesque quis felis mauris. Donec pulvinar
+          neque at pellentesque fringilla. Nulla dapibus facilisis turpis sit
+          amet euismod. Nullam vitae metus nec lorem rutrum eleifend eget at
+          elit. Vestibulum nisi dolor, venenatis a ullamcorper in, auctor a dui.
+        </p>
+      </div>
+      <div class="box-2">
+        <h3>Box Two</h3>
+        <p>
+          Etiam sed ipsum vitae ligula porttitor hendrerit non nec nisi. Sed
+          egestas nibh nulla, eget iaculis dolor ultrices vitae. Mauris a ligula
+          ante. Aenean rutrum malesuada semper. Proin ut elit et nunc pretium
+          lacinia. Suspendisse euismod libero augue, sit amet tempus odio
+          pharetra eu. Duis dui magna, volutpat non odio non, tempor ultrices
+          urna. Proin imperdiet est est, non aliquam diam porta ut. Mauris
+          tortor nulla, feugiat sit amet pharetra vitae, bibendum quis massa.
+          Curabitur neque nisl, posuere porta risus nec, mattis ultrices tortor.
+          Praesent et auctor ante. Duis aliquet felis id quam ultricies
+          ultricies. Suspendisse rhoncus sem at ornare tempus. Nullam ac dapibus
+          nibh. Morbi sed diam nunc. Nulla varius leo nec justo pellentesque
+          dictum. Fusce malesuada molestie est, ut posuere purus auctor nec.
+          Mauris mollis urna dui, vel aliquet ipsum finibus sit amet. Praesent
+          dapibus ultrices felis, id sollicitudin orci semper varius. Mauris
+          congue enim interdum dictum accumsan. Suspendisse eleifend vehicula
+          orci nec imperdiet. Quisque hendrerit arcu in quam egestas convallis.
+          Duis interdum dapibus molestie. Fusce consectetur, orci eget convallis
+          pretium, tortor velit tempor metus, in venenatis ipsum nunc eget leo.
+          Nam eros purus, elementum at ligula ut, iaculis dictum mi.
+        </p>
+      </div>
+      <div class="box-3">
+        <h3>Box Three</h3>
+        <p>
+          Vivamus sit amet iaculis lectus, ut egestas nulla. Maecenas vitae
+          tempor ligula. Sed ex lectus, sodales in dolor et, mollis suscipit
+          erat. Cras aliquam sem et tellus maximus condimentum. Duis non velit
+          justo. Donec ut dui eleifend ex posuere egestas. Pellentesque
+          pellentesque eros non tortor porttitor posuere. Nam lobortis
+          condimentum urna vulputate elementum. Nullam sed lacinia velit. Nunc
+          mollis, ante quis consequat dictum, tellus diam pharetra justo, non
+          vestibulum risus nulla sit amet elit. Praesent at ullamcorper ipsum.
+          Cras ut risus elit. Duis vel auctor augue. Praesent ut fringilla orci.
+          Duis efficitur lobortis libero ac tempus. Maecenas sed nisi lobortis,
+          dictum ex ut, auctor turpis. Sed sit amet dui non quam rutrum
+          tincidunt. Phasellus eu neque viverra, mollis lectus at, dictum justo.
+          Nunc eleifend mattis quam, eget vulputate ligula placerat id. Donec
+          sodales congue finibus. Fusce eu molestie mauris. In nec aliquam arcu,
+          et vulputate purus. Pellentesque ipsum nulla, elementum nec orci et,
+          efficitur iaculis leo. In libero odio, laoreet non nulla vel,
+          pellentesque faucibus quam.
+        </p>
+      </div>
+    </div>
+
+    <div class="container-2">
+            <div class="container-2-box">
+              <h3>Box Four</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                commodo, eros vel interdum sagittis, eros nulla placerat nisi, id
+                blandit ex metus a mi. Praesent semper, augue ut sollicitudin euismod,
+                tellus sem mattis purus, ut sodales metus leo nec mi. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Nam semper tellus at
+                venenatis ornare. Vestibulum ut tincidunt lectus. Sed dignissim
+                iaculis lacus et accumsan. Etiam pretium ac quam nec suscipit. Donec
+                sed pellentesque leo. Pellentesque quis felis mauris. Donec pulvinar
+                neque at pellentesque fringilla. Nulla dapibus facilisis turpis sit
+                amet euismod. Nullam vitae metus nec lorem rutrum eleifend eget at
+                elit. Vestibulum nisi dolor, venenatis a ullamcorper in, auctor a dui.
+              </p>
+            </div>
+            <div class="container-2-box">
+              <h3>Box Five</h3>
+              <p>
+                Etiam sed ipsum vitae ligula porttitor hendrerit non nec nisi. Sed
+                egestas nibh nulla, eget iaculis dolor ultrices vitae. Mauris a ligula
+                ante. Aenean rutrum malesuada semper. Proin ut elit et nunc pretium
+                lacinia. Suspendisse euismod libero augue, sit amet tempus odio
+                pharetra eu. Duis dui magna, volutpat non odio non, tempor ultrices
+                urna. Proin imperdiet est est, non aliquam diam porta ut. Mauris
+                tortor nulla, feugiat sit amet pharetra vitae, bibendum quis massa.
+                Curabitur neque nisl, posuere porta risus nec, mattis ultrices tortor.
+                Praesent et auctor ante. Duis aliquet felis id quam ultricies
+                ultricies. Suspendisse rhoncus sem at ornare tempus. Nullam ac dapibus
+                nibh. Morbi sed diam nunc. Nulla varius leo nec justo pellentesque
+                dictum. Fusce malesuada molestie est, ut posuere purus auctor nec.
+                Mauris mollis urna dui, vel aliquet ipsum finibus sit amet. Praesent
+                dapibus ultrices felis, id sollicitudin orci semper varius. Mauris
+                congue enim interdum dictum accumsan. Suspendisse eleifend vehicula
+                orci nec imperdiet. Quisque hendrerit arcu in quam egestas convallis.
+                Duis interdum dapibus molestie. Fusce consectetur, orci eget convallis
+                pretium, tortor velit tempor metus, in venenatis ipsum nunc eget leo.
+                Nam eros purus, elementum at ligula ut, iaculis dictum mi.
+              </p>
+            </div>
+            <div class="container-2-box">
+              <h3>Box Six</h3>
+              <p>
+                Vivamus sit amet iaculis lectus, ut egestas nulla. Maecenas vitae
+                tempor ligula. Sed ex lectus, sodales in dolor et, mollis suscipit
+                erat. Cras aliquam sem et tellus maximus condimentum. Duis non velit
+                justo. Donec ut dui eleifend ex posuere egestas. Pellentesque
+                pellentesque eros non tortor porttitor posuere. Nam lobortis
+                condimentum urna vulputate elementum. Nullam sed lacinia velit. Nunc
+                mollis, ante quis consequat dictum, tellus diam pharetra justo, non
+                vestibulum risus nulla sit amet elit. Praesent at ullamcorper ipsum.
+                Cras ut risus elit. Duis vel auctor augue. Praesent ut fringilla orci.
+                Duis efficitur lobortis libero ac tempus. Maecenas sed nisi lobortis,
+                dictum ex ut, auctor turpis. Sed sit amet dui non quam rutrum
+                tincidunt. Phasellus eu neque viverra, mollis lectus at, dictum justo.
+                Nunc eleifend mattis quam, eget vulputate ligula placerat id. Donec
+                sodales congue finibus. Fusce eu molestie mauris. In nec aliquam arcu,
+                et vulputate purus. Pellentesque ipsum nulla, elementum nec orci et,
+                efficitur iaculis leo. In libero odio, laoreet non nulla vel,
+                pellentesque faucibus quam.
+              </p>
+            </div>
+
+      
+        </div>  
+
+
+
+
+
+        <div class="container-3">
+                    <div class="container-3-box">
+                      <h3>Box Seven</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                        commodo, eros vel interdum sagittis, eros nulla placerat nisi, id
+                        blandit ex metus a mi. Praesent semper, augue ut sollicitudin euismod,
+                        tellus sem mattis purus, ut sodales metus leo nec mi. Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Nam semper tellus at
+                        venenatis ornare. Vestibulum ut tincidunt lectus. Sed dignissim
+                        iaculis lacus et accumsan. Etiam pretium ac quam nec suscipit. Donec
+                        sed pellentesque leo. Pellentesque quis felis mauris. Donec pulvinar
+                        neque at pellentesque fringilla. Nulla dapibus facilisis turpis sit
+                        amet euismod. Nullam vitae metus nec lorem rutrum eleifend eget at
+                        elit. Vestibulum nisi dolor, venenatis a ullamcorper in, auctor a dui.
+                      </p>
+                    </div>
+                    <div class="container-3-box">
+                      <h3>Box Eight</h3>
+                      <p>
+                        Etiam sed ipsum vitae ligula porttitor hendrerit non nec nisi. Sed
+                        egestas nibh nulla, eget iaculis dolor ultrices vitae. Mauris a ligula
+                        ante. Aenean rutrum malesuada semper. Proin ut elit et nunc pretium
+                        lacinia. Suspendisse euismod libero augue, sit amet tempus odio
+                        pharetra eu. Duis dui magna, volutpat non odio non, tempor ultrices
+                        urna. Proin imperdiet est est, non aliquam diam porta ut. Mauris
+                        tortor nulla, feugiat sit amet pharetra vitae, bibendum quis massa.
+                        Curabitur neque nisl, posuere porta risus nec, mattis ultrices tortor.
+                        Praesent et auctor ante. Duis aliquet felis id quam ultricies
+                        ultricies. Suspendisse rhoncus sem at ornare tempus. Nullam ac dapibus
+                        nibh. Morbi sed diam nunc. Nulla varius leo nec justo pellentesque
+                        dictum. Fusce malesuada molestie est, ut posuere purus auctor nec.
+                        Mauris mollis urna dui, vel aliquet ipsum finibus sit amet. Praesent
+                        dapibus ultrices felis, id sollicitudin orci semper varius. Mauris
+                        congue enim interdum dictum accumsan. Suspendisse eleifend vehicula
+                        orci nec imperdiet. Quisque hendrerit arcu in quam egestas convallis.
+                        Duis interdum dapibus molestie. Fusce consectetur, orci eget convallis
+                        pretium, tortor velit tempor metus, in venenatis ipsum nunc eget leo.
+                        Nam eros purus, elementum at ligula ut, iaculis dictum mi.
+                      </p>
+                    </div>
+                    <div class="container-3-box">
+                      <h3>Box Nine</h3>
+                      <p>
+                        Vivamus sit amet iaculis lectus, ut egestas nulla. Maecenas vitae
+                        tempor ligula. Sed ex lectus, sodales in dolor et, mollis suscipit
+                        erat. Cras aliquam sem et tellus maximus condimentum. Duis non velit
+                        justo. Donec ut dui eleifend ex posuere egestas. Pellentesque
+                        pellentesque eros non tortor porttitor posuere. Nam lobortis
+                        condimentum urna vulputate elementum. Nullam sed lacinia velit. Nunc
+                        mollis, ante quis consequat dictum, tellus diam pharetra justo, non
+                        vestibulum risus nulla sit amet elit. Praesent at ullamcorper ipsum.
+                        Cras ut risus elit. Duis vel auctor augue. Praesent ut fringilla orci.
+                        Duis efficitur lobortis libero ac tempus. Maecenas sed nisi lobortis,
+                        dictum ex ut, auctor turpis. Sed sit amet dui non quam rutrum
+                        tincidunt. Phasellus eu neque viverra, mollis lectus at, dictum justo.
+                        Nunc eleifend mattis quam, eget vulputate ligula placerat id. Donec
+                        sodales congue finibus. Fusce eu molestie mauris. In nec aliquam arcu,
+                        et vulputate purus. Pellentesque ipsum nulla, elementum nec orci et,
+                        efficitur iaculis leo. In libero odio, laoreet non nulla vel,
+                        pellentesque faucibus quam.
+                      </p>
+                    </div>  
+                    <div class="container-3-box">
+                            <h3>Box Ten</h3>
+                            <p>
+                              Vivamus sit amet iaculis lectus, ut egestas nulla. Maecenas vitae
+                              tempor ligula. Sed ex lectus, sodales in dolor et, mollis suscipit
+                              erat. Cras aliquam sem et tellus maximus condimentum. Duis non velit
+                              justo. Donec ut dui eleifend ex posuere egestas. Pellentesque
+                              pellentesque eros non tortor porttitor posuere. Nam lobortis
+                              condimentum urna vulputate elementum. Nullam sed lacinia velit. Nunc
+                              mollis, ante quis consequat dictum, tellus diam pharetra justo, non
+                              vestibulum risus nulla sit amet elit. Praesent at ullamcorper ipsum.
+                              Cras ut risus elit. Duis vel auctor augue. Praesent ut fringilla orci.
+                              Duis efficitur lobortis libero ac tempus. Maecenas sed nisi lobortis,
+                              dictum ex ut, auctor turpis. Sed sit amet dui non quam rutrum
+                              tincidunt. Phasellus eu neque viverra, mollis lectus at, dictum justo.
+                              Nunc eleifend mattis quam, eget vulputate ligula placerat id. Donec
+                              sodales congue finibus. Fusce eu molestie mauris. In nec aliquam arcu,
+                              et vulputate purus. Pellentesque ipsum nulla, elementum nec orci et,
+                              efficitur iaculis leo. In libero odio, laoreet non nulla vel,
+                              pellentesque faucibus quam.
+                            </p>
+                          </div> 
+                          <div class="container-3-box">
+                                <h3>Box Eleven</h3>
+                                <p>
+                                  Vivamus sit amet iaculis lectus, ut egestas nulla. Maecenas vitae
+                                  tempor ligula. Sed ex lectus, sodales in dolor et, mollis suscipit
+                                  erat. Cras aliquam sem et tellus maximus condimentum. Duis non velit
+                                  justo. Donec ut dui eleifend ex posuere egestas. Pellentesque
+                                  pellentesque eros non tortor porttitor posuere. Nam lobortis
+                                  condimentum urna vulputate elementum. Nullam sed lacinia velit. Nunc
+                                  mollis, ante quis consequat dictum, tellus diam pharetra justo, non
+                                  vestibulum risus nulla sit amet elit. Praesent at ullamcorper ipsum.
+                                  Cras ut risus elit. Duis vel auctor augue. Praesent ut fringilla orci.
+                                  Duis efficitur lobortis libero ac tempus. Maecenas sed nisi lobortis,
+                                  dictum ex ut, auctor turpis. Sed sit amet dui non quam rutrum
+                                  tincidunt. Phasellus eu neque viverra, mollis lectus at, dictum justo.
+                                  Nunc eleifend mattis quam, eget vulputate ligula placerat id. Donec
+                                  sodales congue finibus. Fusce eu molestie mauris. In nec aliquam arcu,
+                                  et vulputate purus. Pellentesque ipsum nulla, elementum nec orci et,
+                                  efficitur iaculis leo. In libero odio, laoreet non nulla vel,
+                                  pellentesque faucibus quam.
+                                </p>
+                              </div> 
+                              <div class="container-3-box">
+                                    <h3>Box Twelve</h3>
+                                    <p>
+                                      Vivamus sit amet iaculis lectus, ut egestas nulla. Maecenas vitae
+                                      tempor ligula. Sed ex lectus, sodales in dolor et, mollis suscipit
+                                      erat. Cras aliquam sem et tellus maximus condimentum. Duis non velit
+                                      justo. Donec ut dui eleifend ex posuere egestas. Pellentesque
+                                      pellentesque eros non tortor porttitor posuere. Nam lobortis
+                                      condimentum urna vulputate elementum. Nullam sed lacinia velit. Nunc
+                                      mollis, ante quis consequat dictum, tellus diam pharetra justo, non
+                                      vestibulum risus nulla sit amet elit. Praesent at ullamcorper ipsum.
+                                      Cras ut risus elit. Duis vel auctor augue. Praesent ut fringilla orci.
+                                      Duis efficitur lobortis libero ac tempus. Maecenas sed nisi lobortis,
+                                      dictum ex ut, auctor turpis. Sed sit amet dui non quam rutrum
+                                      tincidunt. Phasellus eu neque viverra, mollis lectus at, dictum justo.
+                                      Nunc eleifend mattis quam, eget vulputate ligula placerat id. Donec
+                                      sodales congue finibus. Fusce eu molestie mauris. In nec aliquam arcu,
+                                      et vulputate purus. Pellentesque ipsum nulla, elementum nec orci et,
+                                      efficitur iaculis leo. In libero odio, laoreet non nulla vel,
+                                      pellentesque faucibus quam.
+                                    </p>
+                                  </div> 
+                    </div>
+  </body>
+</html>
+<!-- 
+
+    Main flex properties
+    display: flex | inline-flex;
+    flex-direction: row|column;
+    flew-wrap: wrap | nowrap| wrapreverse
+    flex-basis: <length>
+    justify-content: flex-start| flex-end| center
+    align-self: flex-start | flex-end | center
+    align-items: flex-start | flex-end | center
+    align-content: flex-start | flex-end | center
+    flex-grow: <number>
+    flex-shrink: <number>
+    flex:<integer>
+    order:<integer>
+
+-->
